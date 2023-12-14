@@ -1,9 +1,9 @@
 #!/bin/bash
 
-ID=$(ID -u)
+ID=$(id -u)
 
 
-if ( $ID -ne 0 )
+if [ $ID -ne 0 ] 
 then
    echo "Error,please run with root user"
 else
