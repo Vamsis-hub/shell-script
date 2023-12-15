@@ -5,6 +5,8 @@ ID=$(id -u)
 
 TIME=$(date +%F-%H-%M-%S)
 
+Logfile='/tmp/$0-$TIME.log"
+
 Variable() {   
       if [ $1 -ne 0 ]
 then 
