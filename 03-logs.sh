@@ -12,7 +12,7 @@ Variable() {
 then 
    echo -e "$2 Installation \e[31m FAILED \e[0m"
 else
-   echo -e "$2 Installation \e[3em SUCESS \e[0m"
+   echo -e "$2 Installation \e[32m SUCESS \e[0m"
 fi   
 
 
