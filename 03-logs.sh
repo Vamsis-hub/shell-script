@@ -1,6 +1,6 @@
 #!/bin/bash
 
-scriptname = $0
+echo "scriptname = $0"
 ID=$(id -u)
 
 Variable() {   
