@@ -3,11 +3,11 @@
 ID=$(id -u)
 
 Variable() {   
-      if [ $? -ne 0 ]
+      if [ $1 -ne 0 ]
 then 
-   echo "MY SQL FAILED"
+   echo "$2 Installation FAILED"
 else
-   echo "MYSQL SUCESS"
+   echo "$2 Installation SUCESS"
 fi   
 
 
@@ -23,10 +23,10 @@ fi
 
 yum install mysql -y
  
-Variable
+Variable $? Mysql
 
 yum install git -y
 
-Variable
+Variable $? Git
 
    
