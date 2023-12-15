@@ -5,7 +5,7 @@ ID=$(id -u)
 
 TIME=$(date +%F-%H-%M-%S)
 
-Logfile='/tmp/$0-$TIME.log"
+Logfile="/tmp/$0-$TIME.log"
 
 Variable() {   
       if [ $1 -ne 0 ]
@@ -26,10 +26,10 @@ else
    echo "you are a root user"
 fi   
 
-yum install mysql -y
+yum install mysql -y &>> $Logfile
  
 Variable $? Mysql
 
-yum install git -y
+yum install git -y &>> $Logfile
 
 Variable $? Git
