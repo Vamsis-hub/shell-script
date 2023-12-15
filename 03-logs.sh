@@ -1,7 +1,9 @@
 #!/bin/bash
 
-echo "scriptname = $0"
+
 ID=$(id -u)
+
+TIME=$(date +%F-%H-%M-%S)
 
 Variable() {   
       if [ $1 -ne 0 ]
