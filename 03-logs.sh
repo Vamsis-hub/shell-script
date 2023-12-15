@@ -10,9 +10,9 @@ Logfile="/tmp/$0-$TIME.log"
 Variable() {   
       if [ $1 -ne 0 ]
 then 
-   echo "$2 Installation FAILED"
+   echo -e "$2 Installation \e[31m FAILED \e[0m"
 else
-   echo "$2 Installation SUCESS"
+   echo -e "$2 Installation \e[3em SUCESS \e[0m"
 fi   
 
 
@@ -20,7 +20,7 @@ fi
 
 if [ $ID -ne 0 ] 
 then
-   echo "Error,please run with root user"
+   echo -e "\e[33m Error \e[0m,please run with root user"
    exit 1
 else
    echo "you are a root user"
