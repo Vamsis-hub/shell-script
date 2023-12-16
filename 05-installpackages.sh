@@ -23,7 +23,7 @@ validate(){
 
 if [ $ID -ne 0 ]
 then
-   echo -e "$R Error,please run with root user $N" 
+   echo -e "$R Error,please run with root user $N"  &>> $Logfile
    exit 1
 else
    echo "I am root user" &>> $Logfile
