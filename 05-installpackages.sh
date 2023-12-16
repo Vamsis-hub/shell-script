@@ -13,11 +13,13 @@ fi
 
 for package in $@
 do
-  yum installed is listed $package
-if [ $? -ne 0 ]
-then
-  yum install $package -y
+    yum installed is listed $package
+  if [ $? -ne 0 ]
+  then
+     yum install $package -y
  # validate $?,installation of $package
-else
-   echo "if the $package is already installed ... Skip"
+  else
+     echo "if the $package is already installed ... Skip"
+  fi
+
 done
