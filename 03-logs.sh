@@ -26,7 +26,7 @@ else
    echo "you are a root user"
 fi   
 
-yum install mysqll -y &>> $Logfile
+yum install mysql -y &>> $Logfile
  
 Variable $? Mysql
 
