@@ -13,10 +13,10 @@ Logfile="/tmp/$0-$TIME.log"
 validate(){ 
   if [ $1 -ne 0 ] 
     then
-       echo -e "$2 ... $R failed $N" &>> $Logfile
+       echo -e "$2 ... $R failed $N"
        exit 1
     else
-       echo -e "$2...  $R success $N" &>> $Logfile
+       echo -e "$2...  $R success $N" 
   fi     
 
 }
